@@ -1,1 +1,2 @@
-- 👋 Hi, I’m @OskarsZile
+# DevOps repozitorijs
+Oskars Zīle DevOps repozitorijs pamati iesācējiem
