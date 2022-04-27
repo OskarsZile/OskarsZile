@@ -38,19 +38,20 @@ Date:   Wed Apr 27 12:13:13 2022 +0300
 ### Commitu HASH atšķiras, jo tie ir nevis failu HASH bet konkrēto darbību, jeb commitu, faili ir identiski un tiem būtu jābūt vienādiem HASH vērtībām.
 
 
+***
 
-16. Pārbaudīt kādas izmaiņas tika veiktas iepriekšējās nedēļas laikā. Atrast vismaz divus veidus kā to izdarīt.
+### 16. Pārbaudīt kādas izmaiņas tika veiktas iepriekšējās nedēļas laikā. Atrast vismaz divus veidus kā to izdarīt.
 
 git log --since=2.weeks
 git log --after="2022-04-17" --before="2022-04-25" 
 
-17. Atrast commit kurus veica autors - “Laura Pacilio”
+### 17. Atrast commit kurus veica autors - “Laura Pacilio”
 
 git log | grep "Laura" -A5 -B5
 
 Laura kopā veikusi 450 commitus;
 
-18. Atrast vai Laura ir veikusi commit pagājušā gada septembrī?
+### 18. Atrast vai Laura ir veikusi commit pagājušā gada septembrī?
 
 git log --after="2021-08-31" --before="2021-10-01" | grep "Laura Pacilio" -c
 
@@ -60,15 +61,16 @@ git log --after="2021-08-31" --before="2021-10-01" | grep "Laura Pacilio" -A10 -
 
 Iegūsim izmaiņu detaļas;
 
-19. Vai Laura ir veikusi commit vakar?
+### 19. Vai Laura ir veikusi commit vakar?
 
 git log -n 10, redzams, ka nav Lauras commitu;
 
 Atbilde:Nē
 
+***
 
 
-* Atlasot rezultātus no pagājušā gada 20 līdz 21 aprīlim var atrast commit kurš ir datēts ar 16 aprīli? Kāpēc tā ir? Atbildi apkopot module_2 > README.md un pārsūtīt rezultātu Github.
+### * Atlasot rezultātus no pagājušā gada 20 līdz 21 aprīlim var atrast commit kurš ir datēts ar 16 aprīli? Kāpēc tā ir? Atbildi apkopot module_2 > README.md un pārsūtīt rezultātu Github.
 
 Jā tā tiešām ir ja meklējam ar: git log --after="2021-04-20" --before="2021-04-22"
 
